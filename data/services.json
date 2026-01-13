@@ -1,0 +1,102 @@
+[
+  {
+    "id": "SRV001",
+    "codigo": "CONSULT-001",
+    "nombre": "Consultoría Empresarial",
+    "descripcion": "Servicio de consultoría estratégica para optimización de procesos empresariales",
+    "categoria": "Consultoría",
+    "precio": 5000.00,
+    "unidad": "Hora",
+    "disponible": true
+  },
+  {
+    "id": "SRV002",
+    "codigo": "DEV-001",
+    "nombre": "Desarrollo de Software a Medida",
+    "descripcion": "Desarrollo de aplicaciones personalizadas según requerimientos del cliente",
+    "categoria": "Desarrollo",
+    "precio": 8500.00,
+    "unidad": "Hora",
+    "disponible": true
+  },
+  {
+    "id": "SRV003",
+    "codigo": "MANT-001",
+    "nombre": "Mantenimiento Preventivo",
+    "descripcion": "Servicio mensual de mantenimiento preventivo de sistemas informáticos",
+    "categoria": "Mantenimiento",
+    "precio": 12000.00,
+    "unidad": "Mensual",
+    "disponible": true
+  },
+  {
+    "id": "SRV004",
+    "codigo": "CAP-001",
+    "nombre": "Capacitación Técnica",
+    "descripcion": "Programas de capacitación en tecnologías de la información",
+    "categoria": "Capacitación",
+    "precio": 3500.00,
+    "unidad": "Sesión",
+    "disponible": true
+  },
+  {
+    "id": "SRV005",
+    "codigo": "SEG-001",
+    "nombre": "Auditoría de Seguridad",
+    "descripcion": "Evaluación completa de seguridad informática y ciberseguridad",
+    "categoria": "Seguridad",
+    "precio": 15000.00,
+    "unidad": "Proyecto",
+    "disponible": true
+  },
+  {
+    "id": "SRV006",
+    "codigo": "CLOUD-001",
+    "nombre": "Migración a la Nube",
+    "descripcion": "Servicio de migración de infraestructura a servicios en la nube",
+    "categoria": "Cloud",
+    "precio": 25000.00,
+    "unidad": "Proyecto",
+    "disponible": true
+  },
+  {
+    "id": "SRV007",
+    "codigo": "SOPORT-001",
+    "nombre": "Soporte Técnico 24/7",
+    "descripcion": "Servicio de soporte técnico disponible las 24 horas del día",
+    "categoria": "Soporte",
+    "precio": 6000.00,
+    "unidad": "Mensual",
+    "disponible": true
+  },
+  {
+    "id": "SRV008",
+    "codigo": "DATA-001",
+    "nombre": "Análisis de Datos",
+    "descripcion": "Servicio de análisis y visualización de datos empresariales",
+    "categoria": "Análisis",
+    "precio": 9500.00,
+    "unidad": "Proyecto",
+    "disponible": true
+  },
+  {
+    "id": "SRV009",
+    "codigo": "INT-001",
+    "nombre": "Integración de Sistemas",
+    "descripcion": "Integración de diferentes sistemas y plataformas empresariales",
+    "categoria": "Integración",
+    "precio": 18000.00,
+    "unidad": "Proyecto",
+    "disponible": false
+  },
+  {
+    "id": "SRV010",
+    "codigo": "BACKUP-001",
+    "nombre": "Respaldo y Recuperación",
+    "descripcion": "Implementación de soluciones de respaldo y recuperación ante desastres",
+    "categoria": "Infraestructura",
+    "precio": 7500.00,
+    "unidad": "Mensual",
+    "disponible": true
+  }
+]

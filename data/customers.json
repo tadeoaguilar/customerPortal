@@ -1,0 +1,34 @@
+[
+  {
+    "id": "CUST001",
+    "nombre": "Empresa ABC S.A.",
+    "rfc": "ABC123456789",
+    "email": "contacto@empresaabc.com",
+    "telefono": "+52 55 1234 5678",
+    "direccion": "Av. Reforma 123, Ciudad de México"
+  },
+  {
+    "id": "CUST002",
+    "nombre": "Servicios XYZ Ltda.",
+    "rfc": "XYZ987654321",
+    "email": "admin@serviciosxyz.com",
+    "telefono": "+52 33 8765 4321",
+    "direccion": "Calle Principal 456, Guadalajara"
+  },
+  {
+    "id": "CUST003",
+    "nombre": "Industrias del Norte",
+    "rfc": "IDN456789123",
+    "email": "ventas@industriasnorte.com",
+    "telefono": "+52 81 5555 6666",
+    "direccion": "Blvd. Industrial 789, Monterrey"
+  },
+  {
+    "id": "CUST004",
+    "nombre": "Comercializadora Global",
+    "rfc": "CGM321654987",
+    "email": "info@comercializadoraglobal.com",
+    "telefono": "+52 222 777 8888",
+    "direccion": "Zona Comercial 321, Puebla"
+  }
+]
