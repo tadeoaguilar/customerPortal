@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { BillingDocument } from '@/types';
 
-export default function PaymentSuccessPage() {
+function SuccessContent() {
   const [billingDoc, setBillingDoc] = useState<BillingDocument | null>(null);
   const [showConfetti, setShowConfetti] = useState(true);
   const router = useRouter();
@@ -329,5 +329,17 @@ export default function PaymentSuccessPage() {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function PaymentSuccessPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100">
+        <p className="text-gray-700">Cargando...</p>
+      </div>
+    }>
+      <SuccessContent />
+    </Suspense>
   );
 }
