@@ -57,33 +57,8 @@ export default function CheckoutPage() {
   };
 
   const handleConfirmBilling = async () => {
-    setIsProcessing(true);
-
-    // Simular proceso de generación de factura
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    // Crear documento de facturación
-    const billingDocument: BillingDocument = {
-      id: `BILL-${Date.now()}`,
-      fecha: new Date().toISOString(),
-      customer: customer!,
-      items: cart,
-      subtotal: calculateSubtotal(),
-      iva: calculateIVA(),
-      total: calculateTotal(),
-      estado: 'pendiente',
-    };
-
-    // Guardar el documento en localStorage (en producción, esto se enviaría a Acumatica)
-    const existingBills = JSON.parse(localStorage.getItem('billingDocuments') || '[]');
-    existingBills.push(billingDocument);
-    localStorage.setItem('billingDocuments', JSON.stringify(existingBills));
-
-    // Limpiar el carrito
-    localStorage.removeItem('cart');
-
-    // Redirigir a la página de confirmación
-    router.push(`/billing/${billingDocument.id}`);
+    // Redirigir a la página de pago
+    router.push('/payment');
   };
 
   const handleBack = () => {
@@ -263,10 +238,10 @@ export default function CheckoutPage() {
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-bold text-gray-800">
-                  ¿Confirmar Facturación?
+                  ¿Proceder al Pago?
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  Al confirmar, se generará un documento de facturación que será procesado en Acumatica ERP
+                  Serás redirigido a la pasarela de pagos para completar tu compra de forma segura
                 </p>
               </div>
               <button
@@ -274,7 +249,7 @@ export default function CheckoutPage() {
                 disabled={isProcessing}
                 className="bg-green-600 text-white py-3 px-8 rounded-lg font-medium hover:bg-green-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
-                {isProcessing ? 'Procesando...' : 'Confirmar Facturación'}
+                Proceder al Pago
               </button>
             </div>
           </div>
